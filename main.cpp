@@ -49,30 +49,30 @@ int main()
             {
             case '1':
                 //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
-                //break;
+                break;
             case '2':
                 //wyszukajAdresatowPoImieniu(adresaci);
-                //break;
+                break;
             case '3':
                 //wyszukajAdresatowPoNazwisku(adresaci);
-               // break;
+                break;
             case '4':
                 //wyswietlWszystkichAdresatow(adresaci);
-                //break;
+                break;
             case '5':
                 //idUsunietegoAdresata = usunAdresata(adresaci);
                 //idOstatniegoAdresata = podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsunietegoAdresata, idOstatniegoAdresata);
-                //break;
+                break;
             case '6':
                 //edytujAdresata(adresaci);
-                //break;
+                break;
             case '7':
-                //zmianaHaslaZalogowanegoUzytkownika(uzytkownicy, idZalogowanegoUzytkownika);
-                //break;
+                ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+                break;
             case '8':
                 ksiazkaAdresowa.ustawIdZalogowanegoUzytkownika(0);
                 //adresaci.clear();
-                //break;
+                break;
             }
         }
     }
