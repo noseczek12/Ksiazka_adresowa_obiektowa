@@ -6,9 +6,8 @@ using namespace std;
 
 int main()
 {
-    //vector <Adresat> adresaci;
+    vector <Adresat> adresaci;
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
-    //int idZalogowanegoUzytkownika = 0;
     //int idOstatniegoAdresata = 0;
     //int idUsunietegoAdresata = 0;
     char wybor;
@@ -38,17 +37,17 @@ int main()
         }
         else
         {
-            //if (adresaci.empty() == true)
+            if (adresaci.empty() == true)
                 // Pobieramy idOstatniegoAdresata, po to aby zoptymalizowac program.
                 // Dzieki temu, kiedy uztykwonik bedzie dodawal nowego adresata
                 // to nie bedziemy musieli jeszcze raz ustalac idOstatniegoAdresata
-                //idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
+            idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor)
             {
             case '1':
-                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
                 break;
             case '2':
                 //wyszukajAdresatowPoImieniu(adresaci);
