@@ -1,15 +1,12 @@
 #include <iostream>
-
 #include "KsiazkaAdresowa.h"
 
 using namespace std;
 
 int main()
 {
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
     vector <Adresat> adresaci;
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
-    //int idOstatniegoAdresata = 0;
-    //int idUsunietegoAdresata = 0;
     char wybor;
 
     while (true)
@@ -41,13 +38,13 @@ int main()
                 // Pobieramy idOstatniegoAdresata, po to aby zoptymalizowac program.
                 // Dzieki temu, kiedy uztykwonik bedzie dodawal nowego adresata
                 // to nie bedziemy musieli jeszcze raz ustalac idOstatniegoAdresata
-            idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
+                //ksiazkaAdresowa.ustawIdOstatniegoAdresata(ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku());
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor)
             {
             case '1':
-                idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
                 break;
             case '2':
                 //wyszukajAdresatowPoImieniu(adresaci);
@@ -70,7 +67,6 @@ int main()
                 break;
             case '8':
                 ksiazkaAdresowa.ustawIdZalogowanegoUzytkownika(0);
-                //adresaci.clear();
                 break;
             }
         }
