@@ -72,3 +72,16 @@ void KsiazkaAdresowa::ustawIdZalogowanegoUzytkownika(int noweId)
 {
     uzytkownikMenedzer.ustawIdZalogowanegoUzytkownika(noweId);
 }
+
+void KsiazkaAdresowa::dodajAdresata()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->dodajAdresata();
+    }
+    else
+    {
+        cout << "Aby dodac adresata , nalezy najpierw sie zalogowac" << endl;
+        system("pause");
+    }
+}

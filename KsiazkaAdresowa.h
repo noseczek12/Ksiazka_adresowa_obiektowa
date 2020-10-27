@@ -32,6 +32,8 @@ public:
     bool czyUzytkownikJestZalogowany();
     char wybierzOpcjeZMenuUzytkownika();
     void ustawIdZalogowanegoUzytkownika(int noweId);
+    void dodajAdresata();
 };
+
 
 #endif

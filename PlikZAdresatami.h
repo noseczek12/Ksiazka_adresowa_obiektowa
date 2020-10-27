@@ -18,6 +18,8 @@ class PlikZAdresatami
     const string NAZWA_PLIKU_Z_ADRESATAMI;
     int idOstatniegoAdresata;
     MetodyPomocnicze metodyPomocnicze;
+    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
+    bool czyPlikJestPusty(fstream &plikTekstowy);
 public:
     PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
     {
@@ -27,6 +29,9 @@ public:
     Adresat pobierzDaneAdresata(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     void ustawIdOstatniegoAdresata(int noweIdOstatniegoAdresata);
+    int pobierzIdOstatniegoAdresata();
+    string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+    bool dopiszAdresataDoPliku(Adresat adresat);
 };
 
 #endif
