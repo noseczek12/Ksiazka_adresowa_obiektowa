@@ -12,6 +12,10 @@ public:
     static string konwerjsaIntNaString(int liczba);
     char wczytajZnak();
     string wczytajLinie();
+    int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
+    int konwersjaStringNaInt(string liczba);
+    string pobierzLiczbe(string tekst, int pozycjaZnaku);
+    string konwersjaIntNaString(int liczba);
 };
 
 #endif

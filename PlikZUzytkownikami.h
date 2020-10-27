@@ -8,17 +8,18 @@
 
 #include "Uzytkownik.h"
 #include "MetodyPomocnicze.h"
+#include "AdresatMenedzer.h"
 
 using namespace std;
 
 class PlikZUzytkownikami
 {
-    const string nazwaPlikuZUzytkownikami;
+    const string NAZWA_PLIKU_Z_UZYTKOWNIKAMI;
     bool czyPlikJestPusty(fstream& plik);
     string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
     Uzytkownik pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami);
 public:
-    PlikZUzytkownikami(string NAZWAPLIKUZUZYTKOWNIKAMI) : nazwaPlikuZUzytkownikami(NAZWAPLIKUZUZYTKOWNIKAMI) {};
+    PlikZUzytkownikami(string nazwaPlikuZUzytkownikami) : NAZWA_PLIKU_Z_UZYTKOWNIKAMI(nazwaPlikuZUzytkownikami){};
     void dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik);
     vector <Uzytkownik> wczytajUzytkownikowZPliku();
     void zapiszWszystkichUzytkownikowDoPliku(vector<Uzytkownik> uzytkownicy);
