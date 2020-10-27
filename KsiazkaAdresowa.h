@@ -33,6 +33,7 @@ public:
     char wybierzOpcjeZMenuUzytkownika();
     void ustawIdZalogowanegoUzytkownika(int noweId);
     void dodajAdresata();
+    void wyswietlWszystkichAdesatow();
 };
 
 

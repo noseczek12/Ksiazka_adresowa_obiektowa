@@ -53,7 +53,7 @@ int main()
                 //wyszukajAdresatowPoNazwisku(adresaci);
                 break;
             case '4':
-                //wyswietlWszystkichAdresatow(adresaci);
+                ksiazkaAdresowa.wyswietlWszystkichAdesatow();
                 break;
             case '5':
                 //idUsunietegoAdresata = usunAdresata(adresaci);

@@ -42,7 +42,10 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
 
 bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
 {
-    uzytkownikMenedzer.czyUzytkownikJestZalogowany();
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany() > 0)
+        return true;
+    else
+        return false;
 }
 
 char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
@@ -83,5 +86,13 @@ void KsiazkaAdresowa::dodajAdresata()
     {
         cout << "Aby dodac adresata , nalezy najpierw sie zalogowac" << endl;
         system("pause");
+    }
+}
+
+void KsiazkaAdresowa::wyswietlWszystkichAdesatow()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->wyswietlWszystkichAdresatow();
     }
 }
