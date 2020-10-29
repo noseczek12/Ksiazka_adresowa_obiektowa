@@ -12,12 +12,14 @@ class KsiazkaAdresowa {
     MetodyPomocnicze metodyPomocnicze;
     UzytkownikMenedzer uzytkownikMenedzer;
     AdresatMenedzer *adresatMenedzer;
+    //PlikZAdresatami plikZAdresatami;
     const string NAZWA_PLIKU_Z_ADRESATAMI;
 public:
     KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
     : uzytkownikMenedzer(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
     {
         adresatMenedzer = NULL;
+        vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     };
     ~KsiazkaAdresowa()
     {
@@ -34,6 +36,7 @@ public:
     void ustawIdZalogowanegoUzytkownika(int noweId);
     void dodajAdresata();
     void wyswietlWszystkichAdesatow();
+    vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };
 
 

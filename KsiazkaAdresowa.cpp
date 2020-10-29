@@ -96,3 +96,11 @@ void KsiazkaAdresowa::wyswietlWszystkichAdesatow()
         adresatMenedzer->wyswietlWszystkichAdresatow();
     }
 }
+
+vector<Adresat> KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    }
+}

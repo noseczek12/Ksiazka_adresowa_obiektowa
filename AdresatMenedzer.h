@@ -27,6 +27,7 @@ public:
     };
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
+    vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };
 
 #endif

@@ -38,6 +38,7 @@ int main()
                 // Pobieramy idOstatniegoAdresata, po to aby zoptymalizowac program.
                 // Dzieki temu, kiedy uztykwonik bedzie dodawal nowego adresata
                 // to nie bedziemy musieli jeszcze raz ustalac idOstatniegoAdresata
+                //ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
                 //ksiazkaAdresowa.ustawIdOstatniegoAdresata(ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku());
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
