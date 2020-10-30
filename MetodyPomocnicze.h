@@ -9,14 +9,13 @@ using namespace std;
 class MetodyPomocnicze
 {
 public:
-    static string konwerjsaIntNaString(int liczba);
+    static string konwersjaIntNaString(int liczba);
     char wczytajZnak();
     string wczytajLinie();
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int konwersjaStringNaInt(string liczba);
     string pobierzLiczbe(string tekst, int pozycjaZnaku);
-    string konwersjaIntNaString(int liczba);
 };
 
 #endif

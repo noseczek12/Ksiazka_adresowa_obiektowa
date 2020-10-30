@@ -1,6 +1,6 @@
 #include "MetodyPomocnicze.h"
 
-string MetodyPomocnicze::konwerjsaIntNaString(int liczba)
+string MetodyPomocnicze::konwersjaIntNaString(int liczba)
 {
     ostringstream ss;
     ss << liczba;
@@ -60,14 +60,6 @@ string MetodyPomocnicze::pobierzLiczbe(string tekst, int pozycjaZnaku)
         pozycjaZnaku ++;
     }
     return liczba;
-}
-
-string MetodyPomocnicze::konwersjaIntNaString(int liczba)
-{
-    ostringstream ss;
-    ss << liczba;
-    string str = ss.str();
-    return str;
 }
 
 int MetodyPomocnicze::pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami)
