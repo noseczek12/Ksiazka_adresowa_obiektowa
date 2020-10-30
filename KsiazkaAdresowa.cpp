@@ -104,3 +104,10 @@ vector<Adresat> KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
         adresatMenedzer->wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     }
 }
+
+void KsiazkaAdresowa::wylogowanieUzytkownika()
+{
+    uzytkownikMenedzer.wylogowanieUzytkownika();
+    delete adresatMenedzer;
+    adresatMenedzer = NULL;
+}

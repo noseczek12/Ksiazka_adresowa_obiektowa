@@ -137,3 +137,8 @@ bool UzytkownikMenedzer::czyUzytkownikJestZalogowany()
     else
         return false;
 }
+
+void UzytkownikMenedzer::wylogowanieUzytkownika()
+{
+    idZalogowanegoUzytkownika = 0;
+}

@@ -11,7 +11,7 @@ int main()
 
     while (true)
     {
-        if (ksiazkaAdresowa.czyUzytkownikJestZalogowany() == 0)
+        if (ksiazkaAdresowa.czyUzytkownikJestZalogowany()==0)
         {
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
 
@@ -67,7 +67,7 @@ int main()
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
                 break;
             case '8':
-                ksiazkaAdresowa.ustawIdZalogowanegoUzytkownika(0);
+                ksiazkaAdresowa.wylogowanieUzytkownika();
                 break;
             }
         }

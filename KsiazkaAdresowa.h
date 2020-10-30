@@ -37,6 +37,7 @@ public:
     void dodajAdresata();
     void wyswietlWszystkichAdesatow();
     vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    void wylogowanieUzytkownika();
 };
 
 
