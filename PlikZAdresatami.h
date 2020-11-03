@@ -16,10 +16,13 @@ using namespace std;
 class PlikZAdresatami
 {
     const string NAZWA_PLIKU_Z_ADRESATAMI;
+    const string nazwaTymczasowegoPlikuZAdresatami = "Tymczas.txt";
     int idOstatniegoAdresata;
     MetodyPomocnicze metodyPomocnicze;
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     bool czyPlikJestPusty(fstream &plikTekstowy);
+    void usunPlik(string nazwaPlikuZRozszerzeniem);
+    void zmienNazwePliku(string staraNazwa, string nowaNazwa);
 public:
     PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
     {
@@ -32,6 +35,10 @@ public:
     int pobierzIdOstatniegoAdresata();
     string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     bool dopiszAdresataDoPliku(Adresat adresat);
+    int zwrocNumerLiniiSzukanegoAdresata(int idAdresata);
+    void usunWybranaLinieWPliku(int numerUsuwanejLinii);
+    int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
+    int pobierzZPlikuIdOstatniegoAdresata();
 };
 
 #endif

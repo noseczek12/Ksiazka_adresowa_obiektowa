@@ -38,6 +38,7 @@ public:
     void wyswietlWszystkichAdesatow();
     vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     void wylogowanieUzytkownika();
+    int usunAdresata();
 };
 
 

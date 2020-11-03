@@ -19,6 +19,7 @@ class AdresatMenedzer
     PlikZAdresatami plikZAdresatami;
     Adresat podajDaneNowegoAdresata();
     void wyswietlDaneAdresata(Adresat adresat);
+    int podajIdWybranegoAdresata();
 public:
     AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
     :  plikZAdresatami(nazwaPlikuZAdresatami), ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika)
@@ -28,6 +29,7 @@ public:
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
     vector<Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    int usunAdresata();
 };
 
 #endif

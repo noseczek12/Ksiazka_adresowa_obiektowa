@@ -111,3 +111,11 @@ void KsiazkaAdresowa::wylogowanieUzytkownika()
     delete adresatMenedzer;
     adresatMenedzer = NULL;
 }
+
+int KsiazkaAdresowa::usunAdresata()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->usunAdresata();
+    }
+}
