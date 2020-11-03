@@ -19,7 +19,6 @@ class PlikZAdresatami
     const string nazwaTymczasowegoPlikuZAdresatami = "Tymczas.txt";
     int idOstatniegoAdresata;
     MetodyPomocnicze metodyPomocnicze;
-    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     bool czyPlikJestPusty(fstream &plikTekstowy);
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
@@ -29,6 +28,7 @@ public:
         idOstatniegoAdresata = 0;
     }
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
+    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     Adresat pobierzDaneAdresata(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     void ustawIdOstatniegoAdresata(int noweIdOstatniegoAdresata);
@@ -39,6 +39,7 @@ public:
     void usunWybranaLinieWPliku(int numerUsuwanejLinii);
     int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
     int pobierzZPlikuIdOstatniegoAdresata();
+    void edytujWybranaLinieWPliku(int numerEdytowanejLinii, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
 };
 
 #endif

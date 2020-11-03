@@ -119,3 +119,11 @@ int KsiazkaAdresowa::usunAdresata()
         adresatMenedzer->usunAdresata();
     }
 }
+
+void KsiazkaAdresowa::edytujAdresata()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->edytujAdresata();
+    }
+}

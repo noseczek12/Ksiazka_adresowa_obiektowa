@@ -11,7 +11,7 @@ class MetodyPomocnicze
 public:
     static string konwersjaIntNaString(int liczba);
     static char wczytajZnak();
-    string wczytajLinie();
+    static string wczytajLinie();
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int konwersjaStringNaInt(string liczba);
