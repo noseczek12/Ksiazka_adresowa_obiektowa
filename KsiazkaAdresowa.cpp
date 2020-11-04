@@ -127,3 +127,11 @@ void KsiazkaAdresowa::edytujAdresata()
         adresatMenedzer->edytujAdresata();
     }
 }
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    if(uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer->wyszukajAdresatowPoImieniu();
+    }
+}

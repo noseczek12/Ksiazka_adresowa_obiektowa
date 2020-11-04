@@ -33,7 +33,8 @@ public:
     int usunAdresata();
     void edytujAdresata();
     void zaktualizujDaneWybranegoAdresata(Adresat adresat, int idEdytowanegoAdresata);
-
+    void wyszukajAdresatowPoImieniu();
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 };
 
 #endif
