@@ -40,6 +40,8 @@ public:
     void wylogowanieUzytkownika();
     int usunAdresata();
     void edytujAdresata();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
 };
 
 
