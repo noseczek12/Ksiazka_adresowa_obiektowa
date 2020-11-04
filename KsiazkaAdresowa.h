@@ -41,6 +41,7 @@ public:
     int usunAdresata();
     void edytujAdresata();
     void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
 };
 
 
