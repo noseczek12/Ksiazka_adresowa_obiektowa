@@ -40,6 +40,7 @@ public:
     int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
     int pobierzZPlikuIdOstatniegoAdresata();
     void edytujWybranaLinieWPliku(int numerEdytowanejLinii, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
+    void usunWybranegoAdresataZPliku(int idUsunietegoAdresata);
 };
 
 #endif
