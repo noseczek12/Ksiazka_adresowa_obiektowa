@@ -35,11 +35,8 @@ public:
     int pobierzIdOstatniegoAdresata();
     string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     bool dopiszAdresataDoPliku(Adresat adresat);
-    int zwrocNumerLiniiSzukanegoAdresata(int idAdresata);
-    void usunWybranaLinieWPliku(int numerUsuwanejLinii);
     int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
     int pobierzZPlikuIdOstatniegoAdresata();
-    void edytujWybranaLinieWPliku(int numerEdytowanejLinii, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
     void usunWybranegoAdresataZPliku(int idUsunietegoAdresata);
     void edytujWybranegoAdresataZPliku(int idEdytowanegoAdresata, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
 };
