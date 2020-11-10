@@ -12,18 +12,19 @@ using namespace std;
 
 #include "MetodyPomocnicze.h"
 #include "Adresat.h"
+#include "PlikTekstowy.h"
 
-class PlikZAdresatami
+class PlikZAdresatami: public PlikTekstowy
 {
     const string NAZWA_PLIKU_Z_ADRESATAMI;
-    const string nazwaTymczasowegoPlikuZAdresatami = "Tymczas.txt";
+    const string nazwaTymczasowegoPlikuZAdresatami;
     int idOstatniegoAdresata;
     MetodyPomocnicze metodyPomocnicze;
-    bool czyPlikJestPusty(fstream &plikTekstowy);
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
 public:
-    PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
+    PlikZAdresatami(string nazwaPliku) :
+        PlikTekstowy(nazwaPliku), nazwaTymczasowegoPlikuZAdresatami("Tymczas.txt")
     {
         idOstatniegoAdresata = 0;
     }
